@@ -27,16 +27,23 @@ $(function () {
     //////////////////////////////////
 
     // TODO 1 - Enable the Grid
-    // toggleGrid();
+     toggleGrid();
 
 
-    // TODO 2 - Create Platforms
+    createPlatform(300, 700, 50, 50, "red"); //bright red for a finished platform
+    createPlatform(400, 600, 65, 50, "red");
+    createPlatform(650, 570, 70, 50, "red");
+    createPlatform(750, 450, 80, 50, "red");
+    createPlatform(1000, 350, 90, 50, "red");
+    createPlatform(650, 300, 100, 50, "red");
+    createPlatform(500, 200, 100, 50, "red");
+    createPlatform(1200, 300, 50, 50, "red");
+    createPlatform(100, 100, 250, 50, "red");
 
 
 
 
-    // TODO 3 - Create Collectables
-
+    createCollectable("diamond", 1200, 100, 40, 0.5, 0.7);
 
 
     
