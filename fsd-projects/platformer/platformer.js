@@ -30,15 +30,15 @@ $(function () {
      toggleGrid();
 
 
-    createPlatform(300, 700, 50, 50, "red",); //bright red for a finished platform
-    createPlatform(400, 600, 65, 50, "red");
-    createPlatform(650, 570, 70, 50, "red");
-    createPlatform(750, 450, 80, 50, "red",);
-    createPlatform(1000, 350, 90, 50, "red");
-    createPlatform(650, 300, 100, 50, "red");
-    createPlatform(500, 200, 100, 50, "red",);
-    createPlatform(1200, 300, 50, 50, "red");
-    createPlatform(100, 100, 250, 50, "red");
+    createPlatform(300, 700, 50, 50, "black",); //bright red for a finished platform
+    createPlatform(400, 600, 65, 50, "white");
+    createPlatform(650, 570, 70, 50, "black");
+    createPlatform(750, 450, 80, 50, "white",);
+    createPlatform(1000, 350, 90, 50, "black");
+    createPlatform(650, 300, 100, 50, "white");
+    createPlatform(500, 200, 100, 50, "black",);
+    createPlatform(1200, 300, 50, 50, "white");
+    createPlatform(100, 100, 250, 50, "black");
 
 
 
@@ -50,7 +50,7 @@ $(function () {
 
     
     createCannon("right", 200, 1000)
-    createCannon("left", 400, 1000)
+    createCannon("left", 300, 1000)
     createCannon("right", 650, 2000)
 
 
