@@ -73,6 +73,7 @@
        var points = 0;
        var speed = 10;
 
+       
 
 
 
@@ -84,7 +85,7 @@
          * If the box drifts off the screen, turn it around!
          */
         function update() {
-          moveBoxTo(boardWidth);
+          moveBoxTo(boardWidth); // Moves box to right edge
           positionX = positionX + speed;
           moveBoxTo(positionX)
           if(positionX > boardWidth){
@@ -102,8 +103,13 @@
          * - increase the speed
          * - move the box to the left side of the screen.
          */
-        function handleBoxClick(posistionX = 0) {
-        changeBoxText(0);
+        function handleBoxClick() {
+        positionX = 0;
+        points = points + 1;
+        changeBoxText(points)
+        if (speed > 0){
+          speed = speed + 3
+        }
 
 
 
