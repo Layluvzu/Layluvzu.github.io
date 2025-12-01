@@ -84,12 +84,14 @@
          * Each time it is called, it should move the Box to a new location.
          * If the box drifts off the screen, turn it around!
          */
+      
         function update() {
           moveBoxTo(boardWidth); // Moves box to right edge
           positionX = positionX + speed;
           moveBoxTo(positionX)
           if(positionX > boardWidth){
-            speed = -speed;
+            //Code to reverse speed goes here
+           speed = -speed;
            }
         }
         if(position < 0){
@@ -109,14 +111,16 @@
         changeBoxText(points)
         if (speed > 0){
           speed = speed + 3
+        }else if (speed < 0){
+          speed = speed - 3
         }
 
 
 
         }
-
-
         
+
+
       })();
     </script>
   </body>
